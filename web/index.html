@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BARC</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+        <link href="resources/css/bootstrap.css" rel="stylesheet">
+        <link href="resources/css/waves.css" rel="stylesheet" />
+        <link href="resources/css/animate.css" rel="stylesheet" />
+        <link href="resources/css/style.css" rel="stylesheet">
+        <link href="resources/css/all-themes.css" rel="stylesheet" />
+        <link href="resources/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+        <link href="resources/css/jqueryUI.css" rel="stylesheet" />
+        <link href="resources/css/datatable.jqueryUI.css" rel="stylesheet" />
+        <link href="resources/css/range.css" rel="stylesheet" />
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        
+    </head>
+    <body class="theme-indigo">
+        
+         <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar headerGradient">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <!--<a class="navbar-brand" href="../../index.html"><img src="resources/images/logo.jpg"></a>-->
+                <a><img style="height:50px" src="resources/images/logo.jpg"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">notifications</i>
+                            <span class="label-count">7</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="material-icons">person_add</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>12 new members joined</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-cyan">
+                                                <i class="material-icons">add_shopping_cart</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>4 sales made</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-red">
+                                                <i class="material-icons">delete_forever</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>Nancy Doe</b> deleted account</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-orange">
+                                                <i class="material-icons">mode_edit</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>Nancy</b> changed name</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-blue-grey">
+                                                <i class="material-icons">comment</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>John</b> commented your post</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-light-green">
+                                                <i class="material-icons">cached</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4><b>John</b> updated status</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-purple">
+                                                <i class="material-icons">settings</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>Settings updated</h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <!-- Tasks -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">flag</i>
+                            <span class="label-count">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">TASKS</li>
+                            <li class="body">
+                                <ul class="menu tasks">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Footer display issue
+                                                <small>32%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 32%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Make new buttons
+                                                <small>45%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Create new dashboard
+                                                <small>54%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-teal" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 54%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Solve transition issue
+                                                <small>65%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h4>
+                                                Answer GitHub questions
+                                                <small>92%</small>
+                                            </h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 92%">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Tasks -->
+                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+<!--            <div class="user-info">
+                <div class="image">
+                    <img src="../../images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
+                    <div class="email">john.doe@example.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="../../index.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">text_fields</i>
+                            <span>Insert</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#NewSurvey">Add New Survey</a>
+                            </li>
+                            <li>
+                                <a onclick="mediaPlanningModule()">Media Planning Tool</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../pages/helper-classes.html" class="menu-toggle">
+                            <i class="material-icons">layers</i>
+                            <span>Format</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>Small Views</span>
+                        </a>
+<!--                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Study</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="../../pages/widgets/cards/basic.html">Basic</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/cards/colored.html">Colored</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/cards/no-header.html">No Header</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Variable</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="../../pages/widgets/infobox/infobox-1.html">Infobox-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/infobox/infobox-2.html">Infobox-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/infobox/infobox-3.html">Infobox-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/infobox/infobox-4.html">Infobox-4</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../pages/widgets/infobox/infobox-5.html">Infobox-5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">swap_calls</i>
+                            <span>Study</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">swap_calls</i>
+                            <span>Variable</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">swap_calls</i>
+                            <span>Option</span>
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    
+                    
+<!--                    <li class="active">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">content_copy</i>
+                            <span>Example Pages</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../../pages/examples/sign-in.html">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/examples/sign-up.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/examples/forgot-password.html">Forgot Password</a>
+                            </li>
+                            <li class="active">
+                                <a href="../../pages/examples/blank.html">Blank Page</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/examples/404.html">404 - Not Found</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/examples/500.html">500 - Server Error</a>
+                            </li>
+                        </ul>
+                    </li>-->
+<!--                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">map</i>
+                            <span>Maps</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../../pages/maps/google.html">Google Map</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/maps/yandex.html">YandexMap</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/maps/jvectormap.html">jVectorMap</a>
+                            </li>
+                        </ul>
+                    </li>-->
+<!--                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_down</i>
+                            <span>Multi Level Menu</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>Menu Item</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>Menu Item - 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Level - 2</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span>Menu Item</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="menu-toggle">
+                                            <span>Level - 3</span>
+                                        </a>
+                                        <ul class="ml-menu">
+                                            <li>
+                                                <a href="javascript:void(0);">
+                                                    <span>Level - 4</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>-->
+<!--                    <li>
+                        <a href="../changelogs.html">
+                            <i class="material-icons">update</i>
+                            <span>Changelogs</span>
+                        </a>
+                    </li>-->
+                    <li class="header">Account</li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-red">donut_large</i>
+                            <span onclick="adminPanel()" >Admin Panel</span>
+                        </a>
+                    </li>
+<!--                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-amber">donut_large</i>
+                            <span>Warning</span>
+                        </a>
+                    </li>-->
+<!--                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-light-blue">donut_large</i>
+                            <span>Information</span>
+                        </a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2016 - 2017 <a href="javascript:void(0);">Karvy Analytics</a>.
+                </div>
+                <div class="version">
+                    <b>Version: </b> 1.0.5
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
+                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+            </ul>;l
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red" class="active">
+                            <div class="red"></div>
+                            <span>Red</span>
+                        </li>
+                        <li data-theme="pink">
+                            <div class="pink"></div>
+                            <span>Pink</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                            <span>Purple</span>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                            <span>Deep Purple</span>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                            <span>Indigo</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                            <span>Blue</span>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                            <span>Light Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                            <span>Cyan</span>
+                        </li>
+                        <li data-theme="teal">
+                            <div class="teal"></div>
+                            <span>Teal</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </li>
+                        <li data-theme="light-green">
+                            <div class="light-green"></div>
+                            <span>Light Green</span>
+                        </li>
+                        <li data-theme="lime">
+                            <div class="lime"></div>
+                            <span>Lime</span>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                            <span>Yellow</span>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                            <span>Amber</span>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                            <span>Orange</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                            <span>Deep Orange</span>
+                        </li>
+                        <li data-theme="brown">
+                            <div class="brown"></div>
+                            <span>Brown</span>
+                        </li>
+                        <li data-theme="grey">
+                            <div class="grey"></div>
+                            <span>Grey</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                            <span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                            <span>Black</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content"> 
+        <div class="container-fluid">
+            <div class="block-header">
+                <div id="displayTable" class="col-lg-12">
+                    <h1 align="center" class="center-block">Welcome to the <br> BARC Universal Estimate Software </h1>
+                </div>
+                <!--<h2><i style="font-size: xx-large" class="fa fa-plus-circle" aria-hidden="true"></i></h2>-->
+                
+            </div>
+        </div>
+    </section>
+        
+    <!--modal section--> 
+    
+    <div id="NewSurvey" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div  class="modal-header modelHeaderBG">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title">Add New Survey</h4>
+                </div>
+                <div class="modal-body">
+                    <button  type="button" class="btn btn-warning center-block" style="margin-top: 3%">Upload Survey</button>
+                    <p align="center" style="margin-top: 3%"> --------------OR--------------- </p>
+                    <button type="button" class="btn btn-warning center-block" onclick="addQuestionUI()" style="margin-top: 3%">Add Question</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <div id="addQuestion" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div  class="modal-header modelHeaderBG">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title">Add New Question</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Question">Question:</label>
+                        <textarea class="form-control" rows="5" id="Question" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></textarea>
+                    </div>
+                    <label>Question Type:</label><br>
+                    <div class="col-lg-4">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Question Type <span class="caret"></span></button>
+                    <ul id="questionType" class="dropdown-menu">
+                        <!--<li class="dropdown-header">Subjective</li>-->
+                        <li><a href="#">Descriptive</a></li>
+                        <li><a href="#">Multiple</a></li>
+                        <li><a href="#">Binary</a></li>
+                        <!--<li><a href="#">Other</a></li>-->
+                        <!--<li class="divider"></li>-->
+<!--                        <li class="dropdown-header">Objective</li>
+                        <li><a href="#">About Us</a></li>-->
+                    </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <textarea class="form-control" rows="3" id="otherQuestionType" style="display:none"></textarea>
+                        <input class="input-sm" onchange="multipleOption()" placeholder="Number of Options.." style="display:none" id="multipleQuestionType" type="text">
+                        <input class="input-sm" onchange="binaryOption()" placeholder="Number of Binary Options.." style="display:none" id="binaryQuestionType" type="text">
+                    </div>
+                    <div id="multipleChoiceQuestion" style="margin: 4%" class="col-lg-12">
+                        
+                    </div>
+                    <div id="binaryQuestion" style="margin: 4%" class="col-lg-12">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 10%">
+                    <button type="button" class="btn btn-warning" onclick="saveToJson()">Next</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal" onclick="showData()">Done</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <div id="adduser" class="modal  fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div  class="modal-header modelHeaderBG">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title">Add New User</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-lg-12">
+                            <div class="row">
+                        <div class=" col-lg-6">
+                            <label for="Username">Username:</label>
+                            <input style="border:1px solid #ddd" type="text" class="form-control" id="Username">
+                        </div>
+                        <div class=" col-lg-6">
+                            <label for="userType">User Type:</label>
+                            <div id="userType" class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Restricted Power User
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Power User</a></li>
+                                    <li><a href="#">Restricted User</a></li>
+                                    <li><a href="#">Restricted Power User</a></li>
+                                    <li><a href="#">Admin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                           <div class="row" style="margin-top:1%">      
+                        <div class=" col-lg-6">
+                            <label for="fname">First Name:</label>
+                            <input style="border:1px solid #ddd" type="text" class="form-control" id="fname">
+                        </div>
+                        <div class=" col-lg-6">
+                            <label for="lname">Last Name:</label>
+                            <input style="border:1px solid #ddd" type="text" class="form-control" id="lname">
+                        </div>
+                        </div>
+                           <div class="row" style="margin-top:1%">      
+                        <div class=" col-lg-6">
+                            <label for="password">Password:</label>
+                            <input style="border:1px solid #ddd" type="password" class="form-control" id="password">
+                        </div>
+                        <div class=" col-lg-6">
+                            <div class="checkbox" style="margin-top:10%">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        </div>
+                        </div>
+                           <div class="row" style="margin-top:1%">      
+                        <div class="col-lg-6">
+                            <label for="email">Email address:</label>
+                            <input style="border:1px solid #ddd" type="email" class="form-control" id="email">
+                        </div>
+                        <div class=" col-lg-6">
+                            <label for="mobile">Mobile:</label>
+                            <input style="border:1px solid #ddd" type="number" class="form-control" id="mobile">
+                        </div>
+                        </div>
+                        
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="margin-top: 43%">
+                    <!--<button type="button" class="btn btn-warning" onclick="saveToJson()">Next</button>-->
+                    <button type="button" class="btn btn-warning" data-dismiss="modal" onclick="saveUser()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <div id="addclient" class="modal   fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div  class="modal-header modelHeaderBG">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title">Add Client</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="checkbox center-block">
+                        <label ><input type="checkbox" value="">Agency</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Media Owner</label>
+                    </div>
+                    <div class="checkbox ">
+                        <label><input type="checkbox" value="" disabled>Advertiser</label>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 1%">
+                    <!--<button type="button" class="btn btn-warning" onclick="saveToJson()">Next</button>-->
+                    <button type="button" class="btn btn-warning" data-dismiss="modal" onclick="saveUser()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+     <!-- end of modal section--> 
+    
+        <script src="resources/js/jquery.min.js"></script>
+        <script src="resources/js/bootstrap.js"></script>
+        <script src="resources/js/bootstrap-select.js"></script>
+        <script src="resources/js/jquery.slimscroll.js"></script>
+        <script src="resources/js/waves.js"></script>
+        <script src="resources/js/admin.js"></script>
+        <script src="resources/js/demo.js"></script>
+        <script src="resources/js/datatable.js"></script>
+        <script src="resources/js/jqueryUI.js"></script>
+        <script src="resources/js/custom.js"></script>
+        <script type="text/javascript">
+        
+        </script>
+    </body>
+</html>

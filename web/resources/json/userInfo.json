@@ -1,0 +1,39 @@
+[
+  {
+    "Username" : "Harsh",
+    "password" : "Harsh@123",
+    "userType" : "admin",    
+    "firstName" : "Harsh",
+    "lastName" : "Solanki",
+    "Email" : "harshvardhan.solanki@karvy.com",
+    "Mobile" : "7799618089"
+    
+  },
+  {
+    "Username" : "Karvy",
+    "password" : "Karvy@123",
+    "userType" : "Restricted User",
+    "firstName" : "Karvy",
+    "lastName" : "Analytics",
+    "Email" : "Karvy@maker.com",
+    "Mobile" : "1234567890"
+  },
+   {
+    "Username" : "Ahmed",
+    "password" : "Ahmed@123",
+    "userType" : "Power User",    
+    "firstName" : "Karvy",
+    "lastName" : "Analytics",
+    "Email" : "karvyAnalytics@karvy.com",
+    "Mobile" : "1234567890"
+  },
+   {
+    "Username" : "Checker",
+    "password" : "Checker@123",
+    "userType" : "Restrcted Power User",    
+    "firstName" : "Karvy",
+    "lastName" : "Analytics",
+    "Email" : "karvyAnalytics@karvy.com",
+    "Mobile" : "1234567890"
+  }
+]
